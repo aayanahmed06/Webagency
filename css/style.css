@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 :root{
     --yellow: #E6AF2E;
     --black:#191716;
@@ -8,7 +13,9 @@
 /* nav section  */
 
 nav{
-    width: 100%;
+    background-color: var(--black);
+    padding-top:40px;
+    width:100%;
     display: flex;
     align-items: center;
     justify-content:space-around;
@@ -39,7 +46,7 @@ h2 a{
 }
 
 ul{
-    border-top: 8px solid var(--yellow);
+    border-top: 9px solid var(--yellow);
 }
 ul,li{
     width: 100%;
