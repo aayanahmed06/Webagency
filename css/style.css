@@ -1,12 +1,15 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 
 :root{
     --yellow: #E6AF2E;
     --black:#191716;
     --white:white;
+    --lightgray:#BDB7A4;
 }
 
 
@@ -21,7 +24,7 @@ nav{
     justify-content:space-around;
 
 }
-h2{
+ .nav-container h2{
     width: 50%;
     background-color: var(--yellow);
     border: 8px solid var(--yellow);
@@ -29,7 +32,7 @@ h2{
     
 }
 
-h2 a{
+  h2 a{
     text-decoration: none;
     color: var(--black);
     text-align: center;
@@ -68,3 +71,70 @@ li a:hover{
 }
 
 /* nav section end  */
+
+/* #############################  */
+
+
+/* header section  */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:500px;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)), url(/img/header-img.jpg);
+}
+
+.banner{
+    text-align: center; 
+    color:var(--white);
+    text-transform:uppercase;
+}
+.conatiner-hr{
+ width: 150px;
+border-color: var(--black);
+margin: 0 auto;
+}
+
+.banner-button button{
+    margin-top: 10px;
+    background-color: transparent;
+    padding: 15px;
+    
+    color: var(--yellow);
+    text-transform: uppercase;
+    border: 2px solid var(--yellow);
+}
+
+.banner-button button:hover{
+    background-color: var(--yellow);
+    color: var(--white);
+}
+
+/* end header  */
+
+/* skill section  */
+#skill{
+    background-color: var(--lightgray);
+    align-content: center;
+    display: flex;
+    
+    
+}
+
+.skill-icon .fas{
+    font-size: 30px;
+   
+    
+    
+}
+
+.skill-heading{
+    color: var(--yellow);
+
+}
+.skill-text{
+    
+}
