@@ -116,25 +116,30 @@ margin: 0 auto;
 /* end header  */
 
 /* skill section  */
-#skill{
+#skills{
     background-color: var(--lightgray);
-    align-content: center;
-    display: flex;
-    
+    padding:60px 0;
+
     
 }
+.skills-container{
+max-width: 90vw;
+margin: 0 auto;
+display: grid;
+grid-template-columns:repeat(4,1fr);
 
-.skill-icon .fas{
-    font-size: 30px;
-   
-    
-    
 }
 
-.skill-heading{
+.skill-item{
+text-align: center;
+margin: 20px 0;
+}
+.skill-item h2{
     color: var(--yellow);
+}
 
+.skill-item .fas{
+    font-size: 30px;
 }
-.skill-text{
-    
-}
+
+
