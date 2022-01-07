@@ -153,7 +153,7 @@ header {
   padding: 20px 0 80px 0;
 }
 
-#services h2 {
+#services .title {
   margin: 40px 0;
   font-size: 50px;
   text-align: center;
@@ -161,9 +161,88 @@ header {
   font-style: italic;
   color: var(--thirdrey);
 }
+.services-container{
+  max-width: 90vw;
+  margin: 0 auto;
+  color: var(--thirdrey);
+}
 
 .title-underline {
   width: 200px;
   margin: 0 auto;
   border: 2px solid var(--main);
+}
+
+.serivce-item {
+  padding: 60px;
+  position: relative;
+ overflow: hidden;
+}
+
+.service-item-white {
+  background: linear-gradient(
+    rgba(206, 208, 206, 0.6),
+    rgba(206, 208, 206, 0.6)
+  );
+}
+.service-item-black {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+.front-text {
+  text-align: center;
+  transition: transform 2s;
+}
+
+.back-text {
+  position: absolute;
+  bottom: -15em;
+  width: 75%;
+  height: 100%;
+  margin: 0 auto;
+  transition: bottom 2s;
+  padding: 30px 0;
+}
+
+.service-item .fas {
+  font-size: 60px;
+  margin-bottom: 30px;
+  color: var(--main);
+}
+
+.back-text h2 {
+  margin-bottom: 20px;
+}
+
+.back-text button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: transparent;
+  border: 2px solid var(--main);
+  color: var(--secondery);
+}
+
+.back-text button:hover {
+  background-color: var(--main);
+  color: var(--secondery);
+}
+
+.service-item-white button {
+  background: var(--main);
+  color: var(--secondery);
+  border-color: var(--main);
+}
+
+.service-item-white button:hover {
+  background: var(--secondery);
+  border-color: var(--secondery);
+  color: var(--main);
+}
+
+.serivce-item .front-text {
+  transform: translateY(-200px);
+}
+
+.serivce-item .back-text {
+  bottom: 0;
 }
