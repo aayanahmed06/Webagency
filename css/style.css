@@ -84,6 +84,11 @@ header {
   margin: 0 auto;
 }
 
+.banner-button {
+  display: flex;
+  justify-content: space-between;
+}
+
 .banner-button button {
   margin-top: 10px;
   background-color: transparent;
@@ -161,7 +166,7 @@ header {
   font-style: italic;
   color: var(--thirdrey);
 }
-.services-container{
+.services-container {
   max-width: 90vw;
   margin: 0 auto;
   color: var(--thirdrey);
@@ -176,7 +181,7 @@ header {
 .serivce-item {
   padding: 60px;
   position: relative;
- overflow: hidden;
+  overflow: hidden;
 }
 
 .service-item-white {
@@ -239,10 +244,29 @@ header {
   color: var(--main);
 }
 
-.serivce-item .front-text {
+.serivce-item:hover .front-text {
   transform: translateY(-200px);
 }
 
-.serivce-item .back-text {
+.serivce-item:hover .back-text {
   bottom: 0;
+}
+
+@media screen and (min-width: 776px) {
+  .services-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .services-container .serivce-item:nth-of-type(1) {
+    order: 1;
+  }
+  .services-container .service-item:nth-of-type(2) {
+    order: 2;
+  }
+  .services-container .service-item:nth-of-type(3) {
+    order: 4;
+  }
+  .services-container .service-item:nth-of-type(4) {
+    order: 3;
+  }
 }
