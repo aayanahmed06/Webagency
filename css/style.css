@@ -124,7 +124,7 @@ header {
   color: var(--main);
 }
 
-.skill-item .fas {
+.skill-item .fas, .skill-item .far{
   font-size: 30px;
 }
 
@@ -211,7 +211,7 @@ header {
   padding: 30s;
 }
 
-.service-item .fas {
+.service-item .fas,.service-item .far{
   font-size: 60px;
   margin-bottom: 30px;
   color: var(--main);
